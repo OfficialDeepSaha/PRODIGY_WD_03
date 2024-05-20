@@ -1,0 +1,53 @@
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  cursor: pointer;
+  border-radius: 10px; /* Add some rounded corners to the cells */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.cell:hover {
+  background-color: #ddd; /* Lighten the background color on hover */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  background-color: #004085;
+}
